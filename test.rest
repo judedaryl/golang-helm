@@ -1,0 +1,15 @@
+@port = 49921
+@productid = 29ca9453-a7e6-4fa9-ae75-4ffcd2b4e41e
+POST http://localhost:{{port}}/products/ 
+
+{
+    "name": "this is a product"
+}
+
+###
+
+###
+GET http://localhost:{{port}}/products/{{productid}}
+
+###
+GET http://localhost:{{port}}/products/
